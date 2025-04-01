@@ -1,0 +1,135 @@
+/* Reset y configuración general */
+@font-face{
+    font-family: 'Norse';
+    src:url('/fonts/Norse-Bold.otf') format('opentype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+   height: 100%;
+}
+
+/* Sección del logo */
+.photologo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: url('/image/photo-1585202900225-6d3ac20a6962.avif') center/cover no-repeat;
+    position: relative;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+
+.photologo img {
+    width: 150px;
+    opacity: 0.9; /* Hace que el logo sea blanco */
+    bottom: 20px;
+    height: 150px;
+    align-self: center;
+  
+}
+span {
+    align-self: center;  
+    font-family: 'Norse',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+}
+/* Sección del formulario */
+.formpart {
+    flex: 1.5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilizar el formulario */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre filas */
+}
+
+/* Cada campo ocupa la mitad del ancho del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+/* Estilos para etiquetas */
+.form-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Estilos para inputs */
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: #0b18cd;
+}
+input:invalid:not(placeholder-shown)
+{    border:2px solid red;
+}
+
+/* Botón */
+button {
+    background-color: #4a653c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 35%;
+}
+
+button:hover {
+    background-color: #E5E7EB;
+}
+
+/* Texto de inicio de sesión */
+.account {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: start;
+}
+.main{
+    padding-top: 80px;
+}
+h4 {
+    padding-bottom: 20px;
+
+}
+h5{
+    padding-bottom: 20px;
+}

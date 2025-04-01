@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="/style/style.css">
+    
+      
+    </>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="photologo">
+        <!---img src="/image/photo-1585202900225-6d3ac20a6962.avif" alt=""-->
+        <img src="/image/odin-lined.png" alt="odin">
+        <span>ODIN</span>
+        </div>
+        <div class="formpart" >
+            <div>
+                <h4 class="main">This is not a real online service! You know you need somethign like this in your life to help you realize your deepest dreams. Sign up now to get started.</h4>
+                <h4>You know you want to.</h4>
+            </div>
+                <h5>Let's do this!</h5>
+                <form action="">
+                    
+                    
+                    <div class="form-group">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" name="name" id="name" required pattern="[A-Za-z]+" placeholder="Just input letters">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname" required pattern="[A-Za-z]+" placeholder="Just input letters">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required placeholder="Type an email">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Minimum eight characters, at least one letter and one number">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="confpassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confpassword" id="confpassword" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Minimum eight characters, at least one letter and one number">
+                    </div>
+                </form>
+            <div>
+                <button id="submit" onclick="validateForm">Create Account</button>
+                <h5 class="account">Alredy have an account? Log in</h5>
+            </div>
+        </div>
+        </div>
+        <script>
+          function validatePassword() {
+        let passwordInput = document.getElementById("password");
+
+        if (!passwordInput.checkValidity()) {
+            passwordInput.classList.add("invalid");
+            alert("Contraseña inválida: " + passwordInput.title);
+        } else {
+            passwordInput.classList.remove("invalid");
+            alert("Contraseña válida");
+        }
+    }
+        </script>      
+</body>
+</html>
